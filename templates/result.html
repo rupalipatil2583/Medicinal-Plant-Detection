@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <h1>Prediction Result</h1>
+            <p>The predicted class for the uploaded image is: <strong>{{ predicted_class }}</strong></p>
+            <a href="/">Upload another image</a>
+        </div>
+    </div>
+</body>
+</html>
